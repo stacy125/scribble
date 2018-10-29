@@ -1,41 +1,57 @@
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # Scribble
 
 ![](https://dl.dropboxusercontent.com/s/8frf8rblw6pnpds/hipsterlogogenerator_1438007087793.png?dl=0)
 
-Scribble is a Django application where users can read, write and interact
-with the best content all around the world. It is designed to be built, refined and deployed over the course of four nights.
+Scribble is a Django application where users can read, write and interact with
+the best content all around the world.
 
-## Submitting
+## Prerequisites
 
-Fork this repo, and submit homework as a pull request on this repo...
+* Python
+* `virtualenv` and managing virtual environments
+* Django views, templates, and models
 
-```
-$ git clone git@github.com:ga-dc-wdi-python/scribble.git
-$ cd scribble
-$ django-admin startproject scribble-project
-$ django-admin startapp scribble
-```
-> When asked if you want to overwrite the readme, enter "n" (for no).
+## Instructions
 
-The `.` creates a new Django app inside the *CURRENT* folder. Otherwise, it creates a new folder. 
+1. Fork and clone this repository.
+1. Change into the new directory.
+1. Fulfill the listed requirements.
 
-<!-- For instance, if you did `rails new scribble` it would create a `scribble` folder and put the Rails app inside there. -->
+Build your Django application in the root of this repository. When asked if you
+want to overwrite the readme, enter "n" (for no).
 
-> This is how a lot of people end up with a `scribble` folder inside another `scribble` folder.
+Unless otherwise specified on the calendar or by an instructor, homework is due
+the next morning by 9:00am.
 
-## Specifications
+## Requirements
 
 ### Models + Migrations
 
-1. Create [models](https://git.generalassemb.ly/dc-wdi-python-django/django-models#models---james) for Post and Comment
-2. Create [migrations](https://git.generalassemb.ly/dc-wdi-python-django/django-models#migrations---ali) for Post and Comment
+Create
+[models](https://git.generalassemb.ly/dc-wdi-python-django/django-models#models)
+for Post and Comment
 
-We will start off with two models: `Post` and `Comment`.
+A `Post` should have:
 
-A `Post` should have an `author`, `title`, and `body` (these can all be `CharField`s). A `Comment` should have an `author`, `body`, and a `post`. The `author` and `body` model attributes can be `CharField`s but `post` should be a `ForeignKey`.
+* `author` (`CharField`)
+* `title`  (`CharField`)
+* `body` (`CharField`)
+
+A `Comment` should have: 
+
+* `author` (`CharField`)
+* `body` (`CharField`)
+* `post` (`ForeignKey` for `Post`)
+
+Create
+[migrations](https://git.generalassemb.ly/dc-wdi-python-django/django-models#migrations)
+for Post and Comment
 
 ### Templates
+
+Your Scribble app will need the following templates:
 
 1. List template
   * Create an list template where a user can see all posts
@@ -51,7 +67,12 @@ A `Post` should have an `author`, `title`, and `body` (these can all be `CharFie
   * Allow the user to delete existing posts and comments
   * You can add this form or link in the detail view for posts
 
-## Bonus
+## Plagiarism
 
-* Add users
-* Create a many-to-many so that users can favorite posts
+Take a moment to refamiliarize yourself with the [Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md). Plagiarized work will not be accepted.
+
+## [License](LICENSE)
+
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
