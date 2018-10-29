@@ -33,13 +33,13 @@ Create
 [models](https://git.generalassemb.ly/dc-wdi-python-django/django-models#models)
 for Post and Comment
 
-A `Post` should have:
+A `Post` should have the following fields:
 
 * `author` (`CharField`)
 * `title`  (`CharField`)
 * `body` (`CharField`)
 
-A `Comment` should have: 
+A `Comment` should have the following fields:
 
 * `author` (`CharField`)
 * `body` (`CharField`)
@@ -53,19 +53,15 @@ for Post and Comment
 
 Your Scribble app will need the following templates:
 
-1. List template
-  * Create an list template where a user can see all posts
-  * Each post should link to its respective detail page
-2. Detail template
-  * Create a detail template where a user can see each individual post.
-  * The show page should also list all of the post's comments.
-3. Forms for creating Posts and Comments
-  * Allow the user to create new posts and comments
-4. Updating and Editing
-  * Allow the user to edit existing posts and comments
-5. Deletion
-  * Allow the user to delete existing posts and comments
-  * You can add this form or link in the detail view for posts
+1. List template: Create an list template where a user can see all posts. Each
+   post should link to its respective detail page.
+2. Detail template: Create a detail template where a user can see each
+   individual post. The show page should also list all of the post's comments.
+3. Forms for creating Posts and Comments: Allow the user to create new posts and
+   comments.
+4. Updating and Editing: Allow the user to edit existing posts and comments.
+5. Deletion: Allow the user to delete existing posts and comments.  You can add
+   this form or link in the detail view for posts.
 
 ## Plagiarism
 
