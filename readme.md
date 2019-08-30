@@ -10,7 +10,7 @@ the best content all around the world.
 ## Prerequisites
 
 * Python
-* `virtualenv` and managing virtual environments
+* `pipenv` and managing virtual environments
 * Django views, templates, and models
 
 ## Instructions
