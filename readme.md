@@ -10,7 +10,7 @@ the best content all around the world.
 ## Prerequisites
 
 * Python
-* `virtualenv` and managing virtual environments
+* `pipenv` and managing virtual environments
 * Django views, templates, and models
 
 ## Instructions
@@ -19,19 +19,20 @@ the best content all around the world.
 1. Change into the new directory.
 1. Fulfill the listed requirements.
 
-Build your Django application in the root of this repository. When asked if you
-want to overwrite the readme, enter "n" (for no).
+Build your Django application in the root of this repository. **When asked if you
+want to overwrite the readme, enter "n" (for no).**
 
 Unless otherwise specified on the calendar or by an instructor, homework is due
 the next morning by 9:00am.
 
 ## Requirements
 
-### Models + Migrations
+This lab is broken up in to three parts, each focusing on a different piece of
+the Django application.
 
-Create
-[models](https://git.generalassemb.ly/dc-wdi-python-django/django-models#models)
-for Post and Comment
+### Part 1: Models + Migrations
+
+Create models for `Post` and `Comment`.
 
 A `Post` should have the following fields:
 
@@ -45,11 +46,25 @@ A `Comment` should have the following fields:
 * `body` (`CharField`)
 * `post` (`ForeignKey` for `Post`)
 
-Create
-[migrations](https://git.generalassemb.ly/dc-wdi-python-django/django-models#migrations)
-for Post and Comment
+Create migrations for `Post` and `Comment`.
 
-### Templates
+Test your models by creating records in the database through the Django Shell.
+
+### Part 2: Views
+
+Now that you have your models and migrations, build out your views. Each view
+should return a JSON object.
+
+You need the following views:
+
+1. List: Create an list view where a user can see all posts.
+2. Detail: Create a detail view where a user can see each individual post. The
+   show page should also list all of the post's comments.
+3. Creating Posts and Comments: Allow the user to create new posts and comments.
+4. Updating and Editing: Allow the user to edit existing posts and comments.
+5. Deletion: Allow the user to delete existing posts and comments.
+
+### Part 3: Templates
 
 Your Scribble app will need the following templates:
 
