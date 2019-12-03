@@ -52,8 +52,7 @@ Test your models by creating records in the database through the Django Shell.
 
 ### Part 2: Views
 
-Now that you have your models and migrations, build out your views. Each view
-should return a JSON object.
+Now that you have your models and migrations, build out your views.
 
 You need the following views:
 
