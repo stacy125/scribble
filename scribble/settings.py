@@ -85,9 +85,9 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tunr',
-        'USER': 'tunr_admin',
-        'PASSWORD': 'tunr',
+        'NAME': 'scribble',
+        'USER': 'scribble_admin',
+        'PASSWORD': 'scribble',
         'HOST': 'localhost'
     }
 }

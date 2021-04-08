@@ -1,0 +1,21 @@
+{% load static %}
+
+<html>
+
+    <head>
+        <title>A PLACE FOR POSTS AND COMMENTS!</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+
+    <body>
+        <h1>Scrib</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Posts</a></li>
+                <li><a href="/comments">Comments</a></li>
+            </ul>
+        </nav>
+        {% block content %} {% endblock %}
+    </body>
+
+</html>

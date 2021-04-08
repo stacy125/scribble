@@ -4,6 +4,8 @@ from django.contrib import admin
 
 from .models import Post
 from .models import Comment
+from .form import PostForm
+from .form import CommentForm
 
 
 admin.site.register(Post)

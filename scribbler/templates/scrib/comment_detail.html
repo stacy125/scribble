@@ -1,0 +1,12 @@
+{% extends 'scrib/base.html' %}
+{% block content %}
+<h2> {{ comment.title }} </h2>
+<p><a href="{% url 'comment_edit' pk=comment.pk %}">Edit</a></p>
+<p><a href="{% url 'comment_delete' pk=comment.pk %}">Delete</a> </p>
+<h3> Post</h3>
+<ul>
+    {% for post in comment.posts.all %}
+    <li> {{ post.title }} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
